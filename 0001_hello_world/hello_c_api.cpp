@@ -64,6 +64,3 @@ static struct PyModuleDef hello_c_api = {
 PyMODINIT_FUNC PyInit_hello_c_api(void) {
     return PyModule_Create(&hello_c_api);
 }
-
-
-// gcc abc123.cpp -shared -o abc123.so -I C:\\Program Files\\Python311\\Include

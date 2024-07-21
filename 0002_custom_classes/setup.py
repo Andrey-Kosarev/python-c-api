@@ -3,13 +3,11 @@ from setuptools.command.build_ext import build_ext as _build_ext
 
 
 module = Extension(
-    'hello_c_api',
-    sources=['hello_c_api.cpp'],
-    include_dirs=['C:/Program Files/Python311/include'],
-    library_dirs=['C:/Program Files/Python311/libs'],
+    'mini_numpy',
+    sources=['mini_numpy.cpp'] 
 )
 
-setup(name='hello_c_api',
+setup(name='mini_numpy',
       version='1.0',
       description='Example module that says hello',
       ext_modules=[module])
